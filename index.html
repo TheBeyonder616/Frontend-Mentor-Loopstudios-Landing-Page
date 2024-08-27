@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loopstudios landing page showcasing immersive VR experiences and interactive projects."
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+    <!--============================Header=================================== -->
+    <header
+      id="header"
+      data-bg
+      class="header header--lazyload"
+      data-bg-mobile="url('./images/mobile/image-hero.jpg')"
+      data-bg-desktop="url('./images/desktop/image-hero.jpg')"
+    >
+      <!--============== [Navigation]==============-->
+      <nav class="nav-mobile">
+        <ul class="nav-mobile__list">
+          <li class="nav-mobile__logo">
+            <img src="./images/logo.svg" alt="Loopstudios brand logo" />
+          </li>
+          <li class="nav-mobile__menu">
+            <img
+              data-open-menu
+              role="button"
+              aria-expanded="false"
+              src="./images/icon-hamburger.svg"
+              alt="Loopstudios menu"
+            />
+          </li>
+        </ul>
+
+        <!-- Desktop -->
+        <section class="nav-desktop__info">
+          <ul class="nav-desktop__info__list">
+            <li><a href="#header">About</a></li>
+            <li><a href="#section-1">Careers</a></li>
+            <li><a href="#section-2">Events</a></li>
+            <li><a href="#section-3">Products</a></li>
+            <li><a href="#footer">Support</a></li>
+          </ul>
+        </section>
+      </nav>
+      <!--===[heading]==-->
+      <section class="heading">
+        <h1 class="heading-primary">
+          Immersive experiences
+          <span> that </span>
+          deliver
+        </h1>
+      </section>
+      <!-- ========================={Nav Menu Open Mobile}=================-->
+
+      <aside class="menu-open hide" data-menu role="menu" aria-expanded="true">
+        <article class="menu-open__overlay" data-overlay>
+          <!-- {LOGO & CLOSE} -->
+          <section class="menu-open__nav">
+            <ul class="menu-open__nav__list">
+              <li class="menu-open__nav__logo">
+                <img src="./images/logo.svg" alt="Loopstudios brand logo" />
+              </li>
+              <li class="menu-open__nav__close">
+                <img
+                  data-close-menu
+                  role="button"
+                  aria-expanded="false"
+                  src="./images/icon-close.svg"
+                  alt="Loopstudios close menu"
+                />
+              </li>
+            </ul>
+          </section>
+          <!-- {More INFO Mobile} -->
+          <section class="menu-open__info" data-menu-info>
+            <ul>
+              <li><a href="#header">About</a></li>
+              <li><a href="#section-1">Careers</a></li>
+              <li><a href="#section-2">Events</a></li>
+              <li><a href="#section-3">Products</a></li>
+              <li><a href="#footer">Support</a></li>
+            </ul>
+          </section>
+        </article>
+      </aside>
+
+      <!-- ===================================={POP UP NAV}======================= -->
+      <aside class="move-up" data-poup>
+        <a href="#header">
+          <img
+            src="./images/chevron-up-outline.svg"
+            alt="A svg of an arrow pointing upwards"
+          />
+        </a>
+      </aside>
+    </header>
+
+    <!--============================[Main]=================================== -->
+    <main id="main" class="main">
+      <!--==={Section 1}====-->
+      <section id="section-1" class="about">
+        <!-- 1 -->
+        <article class="about__image">
+          <picture class="lazy-img-container">
+            <!-- Desktop -->
+            <source
+              media="(min-width: 64em)"
+              data-srcset="./images/desktop/image-interactive.jpg"
+            />
+            <!-- Mobile -->
+            <img
+              class="lazy-img"
+              data-src="./images/mobile/image-interactive.jpg"
+              alt="An image of a man wearing a vr headset"
+            />
+          </picture>
+        </article>
+        <!-- 2 -->
+        <article class="about__info">
+          <h2 class="heading-secondary">
+            The leader in
+            <span> interactive VR </span>
+          </h2>
+          <!-- p -->
+          <p class="heading-p">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </article>
+      </section>
+      <!-- =========================={Section 2}===========================-->
+      <section class="careers">
+        <div class="careers__heading">
+          <h2 class="heading-secondary">Our creations</h2>
+          <!-- Button desktop -->
+          <div class="careers-button-desktop">
+            <a href="#header"> See all </a>
+          </div>
+        </div>
+        <!-- [Grid] -->
+        <article class="careers__grid">
+          <!-- 1 -->
+          <figure class="careers__grid__card card--earth">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-deep-earth.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-deep-earth.jpg"
+                alt="An image of the earth from the space"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                Deep
+                <span> earth </span>
+              </h3>
+            </figcaption>
+          </figure>
+
+          <!-- 2 -->
+          <figure class="careers__grid__card card--arcade">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-night-arcade.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-night-arcade.jpg"
+                alt="An image of an arcade"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                Night
+                <span>Arcade</span>
+              </h3>
+            </figcaption>
+          </figure>
+          <!-- 3 -->
+          <figure class="careers__grid__card card--team">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-soccer-team.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-soccer-team.jpg"
+                alt="An image of a man playing Soccer"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                Soccer
+                <span>Team Vr</span>
+              </h3>
+            </figcaption>
+          </figure>
+          <!-- 4 -->
+          <figure class="careers__grid__card card--grid">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-grid.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-grid.jpg"
+                alt="An image of an authomobile with a stick on the back MICHELI"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                The
+                <span> Grid </span>
+              </h3>
+            </figcaption>
+          </figure>
+          <!-- 5 -->
+          <figure class="careers__grid__card card--above">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-from-above.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-from-above.jpg"
+                alt="An image of a road taking from above"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                From up
+                <span> Above Vr </span>
+              </h3>
+            </figcaption>
+          </figure>
+          <!-- 6 -->
+          <figure class="careers__grid__card card--borealis">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-pocket-borealis.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-pocket-borealis.jpg"
+                alt="An image of the sky with a caption Pocket Borealis"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                Pocket
+                <span> borealis </span>
+              </h3>
+            </figcaption>
+          </figure>
+          <!-- 7 -->
+          <figure class="careers__grid__card card--curioseity">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-curiosity.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-curiosity.jpg"
+                alt="An image of the planet mars with a caption curiosity"
+              />
+            </picture>
+            <!--Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                The
+                <span> curiosity </span>
+              </h3>
+            </figcaption>
+          </figure>
+          <!-- 8 -->
+          <figure class="careers__grid__card card--fisheye">
+            <picture class="lazy-img-container">
+              <!-- Desktop -->
+              <source
+                media="(min-width: 64em)"
+                data-srcset="./images/desktop/image-fisheye.jpg"
+              />
+              <!-- Mobile -->
+              <img
+                class="lazy-img"
+                data-src="./images/mobile/image-fisheye.jpg"
+                alt="An image of the sea with a caption MAKE IT FISHEYE taking with a rounded lense"
+              />
+            </picture>
+            <!-- Caption -->
+            <figcaption>
+              <h3 class="heading-third">
+                Make it
+                <span> fisheye </span>
+              </h3>
+            </figcaption>
+          </figure>
+        </article>
+
+        <div class="careers-button">
+          <a href="#header"> See all </a>
+        </div>
+      </section>
+    </main>
+    <!--============================Footer=================================== -->
+
+    <footer id="footer" class="footer">
+      <article class="footer__mobile">
+        <section class="footer__logo">
+          <img src="./images/logo.svg" alt="Loopstudios logo" />
+        </section>
+        <!-- {BRAND INFORMATION} -->
+        <section class="footer__info">
+          <ul>
+            <li><a href="#header">About</a></li>
+            <li><a href="#section-1">Careers</a></li>
+            <li><a href="#section-2">Events</a></li>
+            <li><a href="#section-3">Products</a></li>
+            <li><a href="#footer">Support</a></li>
+          </ul>
+        </section>
+        <!-- {SOCIAL MEDIA HANDLES} -->
+        <section class="footer__social-handle">
+          <ul>
+            <li>
+              <img
+                src="./images/icon-facebook.svg"
+                alt="An icon of facbook logo"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icon-twitter.svg"
+                alt="An icon of twitter logo"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="An icon of pinterest logo"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icon-instagram.svg"
+                alt="An icon of  instagram logo"
+              />
+            </li>
+          </ul>
+        </section>
+        <section class="footer__rights">
+          <p>© 2021 Loopstudios. All rights reserved.</p>
+        </section>
+
+        <section class="footer__attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Peter Godspower</a>.
+        </section>
+      </article>
+      <!-- ========================================={Desktop}==================== -->
+      <article class="footer__desktop">
+        <section class="footer__desktop__head">
+          <!-- logo -->
+          <div class="footer__desktop__logo">
+            <img src="./images/logo.svg" alt="Loopstudios logo" />
+          </div>
+          <!-- Handlers -->
+          <div class="footer__destop__social-handle">
+            <ul>
+              <li>
+                <img
+                  src="./images/icon-facebook.svg"
+                  alt="An icon of facbook logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/icon-twitter.svg"
+                  alt="An icon of twitter logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/icon-pinterest.svg"
+                  alt="An icon of pinterest logo"
+                />
+              </li>
+              <li>
+                <img
+                  src="./images/icon-instagram.svg"
+                  alt="An icon of  instagram logo"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- {BRAND INFORMATION} -->
+        <section class="footer__desktop__body">
+          <div class="footer__desktop__info">
+            <ul>
+              <li><a href="#header">About</a></li>
+              <li><a href="#section-1">Careers</a></li>
+              <li><a href="#section-2">Events</a></li>
+              <li><a href="#section-3">Products</a></li>
+              <li><a href="#footer">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__desktop__rights">
+            <p>© 2021 Loopstudios. All rights reserved.</p>
+          </div>
+        </section>
+        <!-- Attributon -->
+        <div class="footer__desktop__attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Peter Godspower</a>.
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>
